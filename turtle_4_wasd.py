@@ -25,10 +25,15 @@ def move_d():
     t.forward(50)
     t.stamp()
 
+def restart():
+    t.reset()
+
+
 t.shape('turtle')
 
 t.onkey(move_w, 'w')
 t.onkey(move_a, 'a')
 t.onkey(move_s, 's')
 t.onkey(move_d, 'd')
+t.onkey(restart, 'Escape')
 t.listen()
